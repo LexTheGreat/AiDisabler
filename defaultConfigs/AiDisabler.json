@@ -1,0 +1,62 @@
+{
+    "HINT": "can get TypeId from |aishowstats on| or take it from the print out in BepInEx console (console includes Name/ClassID/TypeID.",
+    "Examples": [
+        { 
+            "ID": "Example__Eagle",
+            "Name": "Eagle0",
+            "ClassId": "Animal",
+            "TypeId": "Eagle"
+        },
+        { 
+            "ID": "Example_Eagle0OnlyByName_OnlyTheFirstEagleToSpawn",
+            "Name": "Eagle0"
+        },
+        { 
+            "ID": "Disable_AllEagles_ByTypeId",
+            "TypeId": "Eagle",
+            "IsDisabled": true
+        },
+        { 
+            "ID": "Kill_AllAnimals_ByClassId",
+            "ClassId": "Animal",
+            "IsKilled": true
+        },
+        {
+            "Children": [
+                {
+                    "Children": [
+                        { "TypeId":"mrpuffton" },{ "TypeId":"mrspuffton" },{ "TypeId":"mutantboss" },{ "TypeId":"PuffyBossMale" },{ "TypeId":"PuffyBossFemale" },{ "TypeId":"DemonBoss" }
+                    ],
+                    "ID": "CreepiesBossGroupOveride",
+                    "IsDisabled": false,
+                    "IsKilled": false
+                }
+            ],
+            "ID": "KillAllCreepiesThisIncludesDemonsChildrenOverrideParrent",
+            "ClassId": "Creepy",
+            "IsDisabled": false,
+            "IsKilled": true
+        }
+    ],
+    "Children": [
+        {
+            "Children": [
+                {
+                    "Children": [
+                        { "TypeId":"mrpuffton" },{ "TypeId":"mrspuffton" },{ "TypeId":"mutantboss" },{ "TypeId":"PuffyBossMale" },{ "TypeId":"PuffyBossFemale" },{ "TypeId":"DemonBoss" }
+                    ],
+                    "ID": "CreepiesBossGroupOveride",
+                    "IsDisabled": false,
+                    "IsKilled": false
+                }
+            ],
+            "ID": "KillAllCreepiesThisIncludesDemonsChildrenOverrideParrent",
+            "ClassId": "Creepy",
+            "IsDisabled": false,
+            "IsKilled": true
+        }
+    ],
+    "ID": "Global",
+    "IsDisabled": false,
+    "IsKilled": false
+}
